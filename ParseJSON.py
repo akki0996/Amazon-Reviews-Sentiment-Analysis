@@ -1,4 +1,8 @@
 import json
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
 
 review_list = []
 positive_review_text_list = []
@@ -34,6 +38,38 @@ print(len(review_list_dict.get('B000H00VBQ').get('positive_text')))
 # I choose asin as the dictionary key. asin key represents the product number in the amazon
 # dict { 'asin': {'positive_text': [], 'negative_text': []}}
 
+# Clean reviews
 
+def cleanReview(text):
+
+
+    # punctuation
+    review = re.sub('[^a-zA-Z]', ' ', text)
+
+    # lowercase
+    review = review.lower()
+
+    review = review.split()
+    # stop words
+    review = [word for word in review if not word in set(stopwords.words('english'))]
+
+    # stemming
+    ps = PorterStemmer()
+    review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
+    review = " ".join(review)
+    print(review)
+
+    cleaned_text = review
+
+    return cleaned_text
+
+cleaned_reviews = {}
+
+for json_obj in review_list:
+
+    cleaned_text = cleanReview(json_obj.get("reviewText"))
+
+    asin = json_obj.get('asin')
+    cleaned_reviews[asin] = cleaned_text
 
 
