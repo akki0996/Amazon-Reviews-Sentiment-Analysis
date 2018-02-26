@@ -63,13 +63,12 @@ def cleanReview(text):
 
     return cleaned_text
 
+
 cleaned_reviews = {}
 
 for json_obj in review_list:
 
     cleaned_text = cleanReview(json_obj.get("reviewText"))
-
     asin = json_obj.get('asin')
     cleaned_reviews[asin] = cleaned_text
-
 
