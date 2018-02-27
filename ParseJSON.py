@@ -4,6 +4,9 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+UNHELPFUL_LIMIT = 5
+LOWEST_REVIEW_SCORE = 3
+
 review_list = []
 positive_review_text_list = []
 negative_review_text_list = []
@@ -57,18 +60,37 @@ def cleanReview(text):
     ps = PorterStemmer()
     review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
     review = " ".join(review)
-    print(review)
+    #print(review)
 
     cleaned_text = review
 
     return cleaned_text
 
 
-cleaned_reviews = {}
+cleaned_reviews = []
+flag = 0
 
-for json_obj in review_list:
+for json_obj in review_list[:500]:
 
     cleaned_text = cleanReview(json_obj.get("reviewText"))
-    asin = json_obj.get('asin')
-    cleaned_reviews[asin] = cleaned_text
+    #asin = json_obj.get('asin')
+    overall = json_obj.get("overall")
+    pos_or_neg = 0
+    # if review overall is greater than 3 review = POSITIVE
+    if overall > LOWEST_REVIEW_SCORE:
+        pos_or_neg = 1
+
+    # if review wasn't helpful to more than 5 people = THROW AWAy
+    if json_obj.get("helpful")[1] > UNHELPFUL_LIMIT:
+        flag = 1
+
+    rated_review_t = (cleaned_text, pos_or_neg)
+
+    # check if review should be thrown away
+    if flag == 0:
+        cleaned_reviews.append(rated_review_t)
+
+    flag = 0
+
+print("size of sample = " + str(len(cleaned_reviews)))
 
