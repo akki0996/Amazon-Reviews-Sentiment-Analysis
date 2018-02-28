@@ -16,7 +16,7 @@ review_list_dict = dict()
 
 with open('review_video.json') as f:
     for line in f:
-       review_list.append(json.loads(line))
+        review_list.append(json.loads(line))
 
 for json_obj in review_list:
     asin = json_obj.get('asin')
@@ -75,6 +75,5 @@ for json_obj in review_list[:500]:
     if isHelpful:
         rated_review_t = (cleaned_text, pos_or_neg)
         cleaned_reviews.append(rated_review_t)
-
 
 print("size of sample = " + str(len(cleaned_reviews)))
