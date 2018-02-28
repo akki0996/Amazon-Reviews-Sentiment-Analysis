@@ -3,6 +3,7 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+from sklearn.feature_extraction.text import CountVectorizer
 
 UNHELPFUL_LIMIT = 5
 LOWEST_REVIEW_SCORE = 3
@@ -12,7 +13,6 @@ positive_review_text_list = []
 negative_review_text_list = []
 
 review_list_dict = dict()
-
 
 with open('review_video.json') as f:
     for line in f:
@@ -37,6 +37,7 @@ for json_obj in review_list:
 # I choose asin as the dictionary key. asin key represents the product number in the amazon
 # dict { 'asin': {'positive_text': [], 'negative_text': []}}
 
+
 # Clean reviews
 def clean_review(text):
     review = re.sub('[^a-zA-Z]', ' ', text)  # punctuation
@@ -52,6 +53,7 @@ def clean_review(text):
 # asin = json_obj.get('asin')
 
 cleaned_reviews = []
+corpus = []
 
 for json_obj in review_list[:500]:
     isHelpful = True
@@ -67,9 +69,12 @@ for json_obj in review_list[:500]:
     if json_obj.get("helpful")[1] > UNHELPFUL_LIMIT:
         isHelpful = False
 
-    # check if review should be thrown away
     if isHelpful:
         rated_review_t = (cleaned_text, pos_or_neg)
         cleaned_reviews.append(rated_review_t)
+        corpus.append(cleaned_text)
 
-print("size of sample = " + str(len(cleaned_reviews)))
+cv = CountVectorizer()
+X = cv.fit_transform(corpus).toarray()
+
+print(len(X[0]))
