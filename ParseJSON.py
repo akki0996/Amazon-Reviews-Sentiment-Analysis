@@ -29,14 +29,10 @@ for json_obj in review_list:
     if 'positive_text' not in review_list_dict.get(asin):
         review_list_dict.get(asin)['positive_text'] = []
 
-    overall_score = json_obj.get('overall')
-    if overall_score > 2:
+    if json_obj.get('overall') > LOWEST_REVIEW_SCORE:
         review_list_dict.get(asin).get('positive_text').append(json_obj.get('reviewText'))
     else:
         review_list_dict.get(asin).get('negative_text').append(json_obj.get('reviewText'))
-
-print(len(review_list_dict.get('B000H00VBQ').get('positive_text')))
-
 
 # I choose asin as the dictionary key. asin key represents the product number in the amazon
 # dict { 'asin': {'positive_text': [], 'negative_text': []}}
