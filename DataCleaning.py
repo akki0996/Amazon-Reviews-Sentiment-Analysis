@@ -3,7 +3,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-LOWEST_REVIEW_SCORE = 3
+LOWEST_REVIEW_SCORE = 3.0
 UNHELPFUL_LIMIT = 5
 
 
@@ -19,8 +19,8 @@ def clean_review(text):
 	review = re.sub('[^a-zA-Z]', ' ', text)  # punctuation
 	review = review.lower()
 	review = review.split()
-	review = [word for word in review if not word in set(stopwords.words('english'))]  # stop words
 	ps = PorterStemmer()  # stemming
+	#review = [ps.stem(word) for word in review]
 	review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
 	review = " ".join(review)
 	return review
@@ -32,7 +32,7 @@ def create_cleaned_reviews(the_review_list):
 
 	cleaned_reviews = []
 
-	for json_obj in the_review_list[:10000]:
+	for json_obj in the_review_list[:2000]:
 		is_helpful = True
 		pos_or_neg = 0
 

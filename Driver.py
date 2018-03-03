@@ -52,12 +52,14 @@ def main():
 	reviews_text = cleaned_reviews[1]
 	reviews_result = cleaned_reviews[2]
 
-	cv = CountVectorizer(max_features=6200)
-	x = cv.fit_transform(reviews_text[:1000]).toarray()
-	y = reviews_result[:1000]
+	cv = CountVectorizer()
+	x = cv.fit_transform(reviews_text[:2000]).toarray()
+	y = reviews_result[:2000]
+
+	print(len(x[0]))
 
 	from sklearn.model_selection import train_test_split
-	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.10, random_state=0)
+	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=0)
 
 	# Fitting Naive Bayes to the Training set
 	from sklearn.naive_bayes import GaussianNB
@@ -66,14 +68,14 @@ def main():
 
 	# Predicting the Test set results
 	y_pred = classifier.predict(x_test)
-	print(y_pred)
-	#
+
 	from sklearn.metrics import confusion_matrix
 	cm = confusion_matrix(y_test, y_pred)
 	print(cm)
 
 	# [2,  11] 2 - correct prediction of negative reviews --- 11 incorrect prediction of positive reviews
 	# [14, 73] 73 - correct predictions of positive reviews --- 14 incorrect prediction of negative reviews
+
 
 if __name__ == '__main__':
 	main()
