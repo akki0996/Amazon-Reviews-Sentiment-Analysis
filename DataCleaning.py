@@ -32,7 +32,7 @@ def create_cleaned_reviews(the_review_list):
 
 	cleaned_reviews = []
 
-	for json_obj in the_review_list[:2000]:
+	for json_obj in the_review_list[:10000]:
 		is_helpful = True
 		pos_or_neg = 0
 

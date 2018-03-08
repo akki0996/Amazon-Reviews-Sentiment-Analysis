@@ -1,6 +1,14 @@
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+
 import pickle
 import DataCleaning as DC
+import sklearn
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression,SGDClassifier
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.svm import SVC, LinearSVC, NuSVC
+
 
 CLEANED_REVIEWS_PICKLE_FILENAME = "cleaned_reviews.pickle"
 
@@ -53,28 +61,24 @@ def main():
 	reviews_result = cleaned_reviews[2]
 
 	cv = CountVectorizer()
-	x = cv.fit_transform(reviews_text[:2000]).toarray()
-	y = reviews_result[:2000]
+	x = cv.fit_transform(reviews_text[:10000]).toarray()
+	y = reviews_result[:10000]
 
 	print(len(x[0]))
 
 	from sklearn.model_selection import train_test_split
-	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=0)
+	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1, random_state=101)
 
-	# Fitting Naive Bayes to the Training set
-	from sklearn.naive_bayes import GaussianNB
-	classifier = GaussianNB()
+	classifier = LinearSVC()
 	classifier.fit(x_train, y_train)
 
-	# Predicting the Test set results
 	y_pred = classifier.predict(x_test)
 
-	from sklearn.metrics import confusion_matrix
-	cm = confusion_matrix(y_test, y_pred)
-	print(cm)
+	print(classification_report(y_test, y_pred))
+	print(confusion_matrix(y_test, y_pred))
 
-	# [2,  11] 2 - correct prediction of negative reviews --- 11 incorrect prediction of positive reviews
-	# [14, 73] 73 - correct predictions of positive reviews --- 14 incorrect prediction of negative reviews
+	accuracy = sklearn.metrics.accuracy_score(y_test, y_pred, normalize=True, sample_weight=None)
+	print(accuracy)
 
 
 if __name__ == '__main__':
