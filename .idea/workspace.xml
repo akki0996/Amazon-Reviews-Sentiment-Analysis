@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8e6f14-520a-4ed1-b95d-60facd4b6618" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SomeBackUp" />
-      <change beforePath="$PROJECT_DIR$/.idea/NLP_GROUP5.iml" afterPath="$PROJECT_DIR$/.idea/NLP_GROUP5.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DataCleaning.py" afterPath="$PROJECT_DIR$/DataCleaning.py" />
       <change beforePath="$PROJECT_DIR$/Driver.py" afterPath="$PROJECT_DIR$/Driver.py" />
-      <change beforePath="$PROJECT_DIR$/cleaned_reviews.pickle" afterPath="$PROJECT_DIR$/cleaned_reviews.pickle" />
-      <change beforePath="$PROJECT_DIR$/ex1.py" afterPath="$PROJECT_DIR$/ex1.py" />
+      <change beforePath="$PROJECT_DIR$/Natural-Language-Processing/__MACOSX/Natural_Language_Processing/._Restaurant_Reviews.tsv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Natural-Language-Processing/__MACOSX/Natural_Language_Processing/._natural_language_processing.R" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Natural-Language-Processing/__MACOSX/Natural_Language_Processing/._natural_language_processing.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SomeBackUp" afterPath="$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/SomeBackUp" />
+      <change beforePath="$PROJECT_DIR$/ex1.py" afterPath="$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/ex1.py" />
+      <change beforePath="$PROJECT_DIR$/review_video.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +19,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/NLP_GROUP5$Driver.coverage" NAME="Driver Coverage Results" MODIFIED="1520481968811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_GROUP5$Ignore.coverage" NAME="Ignore Coverage Results" MODIFIED="1520917754767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_GROUP5$Driver.coverage" NAME="Driver Coverage Results" MODIFIED="1521049168674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_GROUP5$ParseJSON.coverage" NAME="ParseJSON Coverage Results" MODIFIED="1519867227339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_GROUP5$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1519680313585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_GROUP5$naive_bayes.coverage" NAME="naive_bayes Coverage Results" MODIFIED="1519854856201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_Bayes/Naive_Bayes" />
@@ -37,10 +38,10 @@
       <file leaf-file-name="Driver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="600">
+              <caret line="151" column="64" lean-forward="true" selection-start-line="151" selection-start-column="64" selection-end-line="151" selection-end-column="64" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +74,9 @@
         <option value="$PROJECT_DIR$/Natural-Language-Processing/version3.py" />
         <option value="$PROJECT_DIR$/version3.py" />
         <option value="$PROJECT_DIR$/DataCleaning.py" />
-        <option value="$PROJECT_DIR$/SomeBackUp" />
         <option value="$PROJECT_DIR$/ex1.py" />
+        <option value="$PROJECT_DIR$/SomeBackUp" />
+        <option value="$PROJECT_DIR$/Ignore.py" />
         <option value="$PROJECT_DIR$/Driver.py" />
       </list>
     </option>
@@ -86,8 +88,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="532" />
-    <option name="y" value="65" />
+    <option name="x" value="205" />
+    <option name="y" value="48" />
     <option name="width" value="2903" />
     <option name="height" value="1789" />
   </component>
@@ -106,8 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,24 +120,33 @@
               <item name="NLP_GROUP5" type="462c0819:PsiDirectoryNode" />
               <item name="Natural-Language-Processing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NLP_GROUP5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP_GROUP5" type="462c0819:PsiDirectoryNode" />
+              <item name="Natural-Language-Processing" type="462c0819:PsiDirectoryNode" />
+              <item name="Natural_Language_Processing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Anaconda3" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5\Natural-Language-Processing" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5\Natural-Language-Processing\Natural_Language_Processing" />
+      <recent name="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5\Natural-Language-Processing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,6 +200,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Ignore" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NLP_GROUP5" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5\Natural-Language-Processing\Natural_Language_Processing\Ignore.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ParseJSON" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,25 +233,6 @@
       <module name="NLP_GROUP5" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Users\Acer\Google Drive\NLP\Group Project\NLP_GROUP5\Driver.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="naive_bayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Naive_Bayes/Naive_Bayes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NLP_GROUP5" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Naive_Bayes/Naive_Bayes/naive_bayes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,18 +259,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ParseJSON" />
-      <item index="1" class="java.lang.String" itemvalue="Python.naive_bayes" />
-      <item index="2" class="java.lang.String" itemvalue="Python.DataCleaning" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Driver" />
-      <item index="4" class="java.lang.String" itemvalue="Python.version3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.DataCleaning" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Driver" />
+      <item index="3" class="java.lang.String" itemvalue="Python.version3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Ignore" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Driver" />
-        <item index="1" class="java.lang.String" itemvalue="Python.version3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.DataCleaning" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ParseJSON" />
-        <item index="4" class="java.lang.String" itemvalue="Python.naive_bayes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Ignore" />
+        <item index="2" class="java.lang.String" itemvalue="Python.version3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.DataCleaning" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ParseJSON" />
       </list>
     </recent_temporary>
   </component>
@@ -297,15 +306,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961223" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37544066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961223" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28835836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1456545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39952996" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -345,25 +354,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ex1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="80104">
-          <caret line="904" column="129" lean-forward="false" selection-start-line="904" selection-start-column="123" selection-end-line="904" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/DataCleaning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1922">
@@ -378,20 +374,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex1.py">
+    <entry file="file://$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/ex1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="80104">
-          <caret line="904" column="129" lean-forward="true" selection-start-line="904" selection-start-column="123" selection-end-line="904" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/DataCleaning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1922">
@@ -406,7 +396,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex1.py">
+    <entry file="file://$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/ex1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -477,13 +467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="125922">
-          <caret line="1427" column="0" lean-forward="false" selection-start-line="1427" selection-start-column="0" selection-end-line="1427" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/review.json" />
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -493,13 +477,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/review.json" />
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="113" lean-forward="true" selection-start-line="0" selection-start-column="103" selection-end-line="0" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -510,13 +488,7 @@
     <entry file="file://$PROJECT_DIR$/review.json" />
     <entry file="file://$PROJECT_DIR$/Testing.py" />
     <entry file="file://$PROJECT_DIR$/Naive_Bayes/Naive_Bayes/naive_bayes.py" />
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="1186">
-          <caret line="1427" column="0" lean-forward="false" selection-start-line="1427" selection-start-column="0" selection-end-line="1427" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1096">
@@ -533,13 +505,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/review.json" />
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="113" lean-forward="true" selection-start-line="0" selection-start-column="103" selection-end-line="0" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -555,13 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/review_video.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="1460">
-          <caret line="904" column="129" lean-forward="false" selection-start-line="904" selection-start-column="123" selection-end-line="904" selection-end-column="133" />
         </state>
       </provider>
     </entry>
@@ -589,32 +548,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/version3.py" />
-    <entry file="file://$PROJECT_DIR$/DataCleaning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1922">
-          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Office.json">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2046">
+          <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SomeBackUp">
+    <entry file="file://$PROJECT_DIR$/review_video.json" />
+    <entry file="file://$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/Ignore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="9" column="107" lean-forward="false" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
-          <folding />
+        <state relative-caret-position="1054">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex1.py">
+    <entry file="file://$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/ex1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="45" />
@@ -622,12 +571,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Natural-Language-Processing/Natural_Language_Processing/SomeBackUp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="1" column="616" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="616" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataCleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state relative-caret-position="600">
+          <caret line="151" column="64" lean-forward="true" selection-start-line="151" selection-start-column="64" selection-end-line="151" selection-end-column="64" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
