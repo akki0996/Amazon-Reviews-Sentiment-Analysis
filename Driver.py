@@ -127,6 +127,9 @@ def main():
 	InputMNBReviewNegative = "This product was bad and I hated it. It was a worse thing I've ever bought. It is terrible"
 	InputMNBReviewPositive = "This product was good and I loved it. It was the best thing I've ever bought."
 
+	print("Positive Review: ", InputMNBReviewPositive)
+	print("Negative Review: ", InputMNBReviewNegative, "\n")
+
 	InputMNBReviewPositive = DC.clean_review(InputMNBReviewPositive)
 	InputMNBReviewNegative = DC.clean_review(InputMNBReviewNegative)
 
